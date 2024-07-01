@@ -23,12 +23,12 @@ La aplicación permite gestionar usuarios y películas mediante una API RESTful.
 
 1. Clona el repositorio:
     ```bash
-    git clone https://github.com/FrijolitoRaza/CaC-24129.git
+    git clone https://github.com/FrijolitoRaza/Cac24129_G10.git
     ```
 
 2. Navega al directorio del proyecto:
     ```bash
-    cd CaC-24129
+    cd Cac24129-G10
     ```
 
 3. Instala las dependencias:
@@ -174,5 +174,3 @@ Edita los archivos del proyecto según sea necesario. Por ejemplo, puedes editar
   
   Elimina la película con el ID especificado.
 
-
-# Cac24129-G10
