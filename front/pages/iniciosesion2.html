@@ -19,14 +19,15 @@
     </header>
     <main id="main" class="main">
         <section data-aos="zoom-in" data-aos-duration="1000" class="seccionRegistrarse">
-            <form id="loginForm">
+            <!--pongo get ya que en github pages da error el method post-->
+            <form action="" method="get">
                 <h2 class="tituloRegistrarse">Iniciar Sesión</h2>
                 <div>
-                    <input type="email" placeholder="Email" id="email" name="email" required>
+                    <input type="email" placeholder="Email" id="email" name="email">
                     <div class="error-text"></div>
                 </div>
                 <div>
-                    <input type="password" placeholder="Contraseña" id="password" name="password" required>
+                    <input type="password" placeholder="Contraseña" id="password" name="password">
                     <div class="error-text"></div>
                 </div>
                 <div>
@@ -42,36 +43,6 @@
     <script>
         AOS.init();
     </script>
-    <script>
-        document.getElementById('loginForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            const data = {
-                email: document.getElementById('email').value,
-                password: document.getElementById('password').value
-            };
-            
-            fetch('http://localhost:3306/api/users/login', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(data)
-            })
-            .then(response => response.json())
-            .then(data => {
-                if (data.error) {
-                    alert(data.error);
-                } else {
-                    alert('Inicio de sesión exitoso');
-                    window.location.href = '../index.html';
-                }
-            })
-            .catch(error => {
-                console.error('Error:', error);
-                alert('Hubo un error al iniciar sesión');
-            });
-        });
-    </script>
+    <script src="../js/valida_iniciosesion.js"></script>
 </body>
 </html>
