@@ -173,6 +173,7 @@ Edita los archivos del proyecto según sea necesario. Por ejemplo, puedes editar
   
   Elimina la película con el ID especificado.
 
+<<<<<<< HEAD
 
 # Cac24129-G10
 
@@ -182,3 +183,5 @@ CREATE
 READ
 UPDATE
 DELETE
+=======
+>>>>>>> 1c5ed1ec44a9d9ec27034253bfb84fd4349b8abe
