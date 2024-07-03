@@ -133,21 +133,20 @@ Edita los archivos del proyecto según sea necesario. Por ejemplo, puedes editar
 - **Crear un nuevo usuario**  
   `POST /api/users`
   
-  Crea un nuevo usuario. El cuerpo de la solicitud debe contener `username`, `password` y `email`.
+  Crea un nuevo usuario. El cuerpo de la solicitud debe contener `Nombre`, `Apellido`, `Correo`, `Pass`, `FDN`, `ID_Pais`, `Fecha_Creacion`, `ID_Suscripcion`.
 
 - **Actualizar un usuario por ID**  
   `PUT /api/users/:id`
   
-  Actualiza el usuario con el ID especificado. El cuerpo de la solicitud puede contener `username`, `password` y `email`.
+  Actualiza el usuario con el ID especificado. El cuerpo de la solicitud puede contener `Nombre`, `Apellido`, `Correo`, `Pass`, `FDN`, `ID_Pais`, `Fecha_Creacion`, `ID_Suscripcion`.
 
 - **Eliminar un usuario por ID**  
   `DELETE /api/users/:id`
   
   Elimina el usuario con el ID especificado.
 
-### Películas
 
-(Notar que la implementación de las rutas de películas no está proporcionada en tu código, pero a continuación se describe cómo podrían ser estas rutas.)
+### Películas
 
 - **Listar todas las películas**  
   `GET /api/movies`
@@ -162,15 +161,27 @@ Edita los archivos del proyecto según sea necesario. Por ejemplo, puedes editar
 - **Crear una nueva película**  
   `POST /api/movies`
   
-  Crea una nueva película. El cuerpo de la solicitud debe contener `title`, `director`, `releaseDate`, etc.
+  Crea una nueva película. El cuerpo de la solicitud debe contener `Titulo`, `Fecha_Lanzamiento`, `Duracion`, `Sinopsis`, `Imagen`, `Genero`, `Restriccion_Edad`.
 
 - **Actualizar una película por ID**  
   `PUT /api/movies/:id`
   
-  Actualiza la película con el ID especificado. El cuerpo de la solicitud puede contener `title`, `director`, `releaseDate`, etc.
+  Actualiza la película con el ID especificado. El cuerpo de la solicitud puede contener `Titulo`, `Fecha_Lanzamiento`, `Duracion`, `Sinopsis`, `Imagen`, `Genero`, `Restriccion_Edad`.
 
 - **Eliminar una película por ID**  
   `DELETE /api/movies/:id`
   
   Elimina la película con el ID especificado.
 
+<<<<<<< HEAD
+
+# Cac24129-G10
+
+
+CRUD
+CREATE
+READ
+UPDATE
+DELETE
+=======
+>>>>>>> 1c5ed1ec44a9d9ec27034253bfb84fd4349b8abe
