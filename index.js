@@ -17,6 +17,8 @@ app.use(express.static('front'));
 app.use('/api/users', moviesUsers);
 app.use('/api/movies', moviesRouter);
 
+
+
 app.get("/", (req, res) => {
     res.send(`Servidor escuchando en puerto ${PORT}`);
 });
